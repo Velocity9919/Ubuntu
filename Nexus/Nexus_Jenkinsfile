@@ -1,0 +1,23 @@
+stage('Upload artifact to Nexus') {
+            steps {
+                script{
+                    def readpomVersion = readMavenPom file: 'pom.xml'
+                    nexusArtifactUploader artifacts: 
+                    [
+                        [
+                            artifactId: 'spring-framework-petclinic', 
+                            classifier: '', 
+                            file: 'target/petclinic.war', 
+                            type: 'war'
+                        ]
+                    ], 
+                    credentialsId: 'Nexus-cred', 
+                    groupId: 'org.springframework.samples', 
+                    nexusUrl: '15.206.89.18:8081', 
+                    nexusVersion: 'nexus3', 
+                    protocol: 'http', 
+                    repository: 'petclinic-release', 
+                    version: "${readpomVersion.version}"
+                }
+            }
+        }
