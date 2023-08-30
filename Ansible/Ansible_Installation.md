@@ -33,11 +33,17 @@ sudo vi /etc/ansible/hosts
 7.Append your server’s DNS or IP address:
 
 [webservers]
+
 server1.cyberciti.biz
+
 104.20.187.5
+
 104.20.186.5
 
 [devservers]
+
 10.98.222.4
+
 10.98.222.7
+
 10.98.222.8
