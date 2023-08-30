@@ -42,22 +42,22 @@ sudo vi /opt/tomcat/conf/tomcat-users.xml
 sudo vi /opt/tomcat/webapps/manager/META-INF/context.xml
 ````
 
------------------------------------------------------------------------------
-<!-- <Valve className="org.apache.catalina.valves.RemoteAddrValve"
 
-         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
------------------------------------------------------------------------------
+  <!-- <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+
+           allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
+
 
 ````
 sudo vi /opt/tomcat/webapps/host-manager/META-INF/context.xml
 ````
 
-----------------------------------------------------------------------------
-<!--<Valve className="org.apache.catalina.valves.RemoteAddrValve"
 
-         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
+  <!--<Valve className="org.apache.catalina.valves.RemoteAddrValve"
 
------------------------------------------------------------------------------
+           allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
+
+
 ````
 sudo vi /etc/systemd/system/tomcat.service
 ````
