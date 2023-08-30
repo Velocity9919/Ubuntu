@@ -5,6 +5,7 @@ sudo apt update
 sudo apt install default-jdk -y
 java -version
 ````
+---------- Tomcat Installation ---------
 ````
 cd /opt
 ````
