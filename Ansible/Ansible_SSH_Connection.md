@@ -23,6 +23,7 @@ passwd root
 vi /etc/ssh/sshd_config
 ````
 #PermitRootLogin prohibit-password (# uncomment) PermitRootLogin yes (change like this)
+
 PasswordAuthentication no (change to PasswordAuthentication yes)
 ````
 systemctl restart sshd
