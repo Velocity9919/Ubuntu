@@ -34,7 +34,7 @@ ssh-keygen
 ````
 ssh-copy-id root@
 ````
-172.31.14.123 (ansible privateIP) (docker privateIP)
+172.31.14.123 (Node-PrivateIP)(ansible privateIP) (docker privateIP)
 ````
 ssh root@
 ````
