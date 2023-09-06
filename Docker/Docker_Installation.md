@@ -39,5 +39,8 @@ newgrp docker
 sudo chmod 666 /var/run/docker.sock
 ````
 ````
+sudo chmod 777 /var/run/docker.sock
+````
+````
 sudo systemctl restart docker
 ````
