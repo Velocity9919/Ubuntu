@@ -5,7 +5,7 @@ java --version
 
 cd /opt/
 
-https://dlcdn.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.tar.gz
+wget https://dlcdn.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.tar.gz
 tar -xvf apache-maven-3.9.4-bin.tar.gz
 mv apache-maven-3.9.4 maven
 rm apache-maven-3.9.4-bin.tar.gz
