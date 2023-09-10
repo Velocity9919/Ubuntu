@@ -2,7 +2,7 @@
 stage("deploy to tomcat"){
             steps{
                 sshagent(['tomcat-privatekey']) {
-                    sh "scp -o StrictHostKeyChecking=no target/petclinic.war ubuntu@3.109.3.26:/opt/tomcat/webapps"
+                    sh "scp -o StrictHostKeyChecking=no target/petclinic.war ubuntu@3.109.3.26:/opt/tomcat/webapps"  # private Ip
 }
             }
         }
@@ -14,5 +14,7 @@ stage("deploy to tomcat"){
 chown -R ubuntu:ubuntu /opt
 ssh-agent plugin 
 ssh-agent pipelini script
+
+SSH Username with private key
 username : ubuntu
-passwd : .pem file
+passwd : .pem file (Tomcat)
