@@ -1,6 +1,10 @@
 # SSH connection between Ansible and Docker
 ````
-hostnamectl hostname Jenkins
+sudo apt update
+````
+
+````
+hostnamectl hostname Ansible-Master
 ````
 ````
 bash
