@@ -1,0 +1,9 @@
+pluggin : Sonarqube
+
+Generate Tokens :
+Administration  --> Security --> users --> Tokens	--> Generate Tokens
+
+Webhooks :
+Administration  --> Configuration --> Webhooks --> create
+Name : Jenkins
+URL : http://13.234.136.66:8080/sonarqube-webhook/     (jenkins Url)
