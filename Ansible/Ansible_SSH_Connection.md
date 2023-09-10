@@ -1,13 +1,13 @@
 # SSH connection between Ansible and Docker
-````
-sudo apt update
-````
 
 ````
 hostnamectl hostname Ansible-Master
 ````
 ````
 bash
+````
+````
+sudo apt update
 ````
 ````
 sudo apt-get install -y default-jdk
