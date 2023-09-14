@@ -1,0 +1,9 @@
+172.31.44.103 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: root@172.31.44.103: Permission denied (publickey,password).",
+    "unreachable": true
+}
+
+
+ssh-copy-id -i /root/.ssh 172.31.44.103 (node private Ip)
+
