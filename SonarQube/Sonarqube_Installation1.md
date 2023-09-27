@@ -1,3 +1,8 @@
+  ````
+sudo apt-get update -y
+sudo apt-get install -y default-jdk
+java --version
+````
 ````
 apt install unzip
 ````
@@ -6,6 +11,7 @@ adduser sonarqube
 ````
 ````
 sudo su - sonarqube
+````
 ````
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.4.0.54424.zip
 ````
