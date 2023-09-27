@@ -13,16 +13,16 @@ adduser sonarqube
 sudo su - sonarqube
 ````
 ````
-wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.4.0.54424.zip
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.0.65466.zip
 ````
 ````
 unzip *
 ````
 ````
-mv sonarqube-9.4.0.54424 sonarqube
+mv sonarqube-9.9.0.65466 sonarqube
 ````
 ````
-rm sonarqube-9.4.0.54424.zip
+rm sonarqube-9.9.0.65466.zip
 ````
 ````
 chmod -R 755 sonarqube
