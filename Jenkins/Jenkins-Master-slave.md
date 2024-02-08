@@ -142,6 +142,45 @@ Gr22PzggeM+8nEEU05nC1VJwYMg4+/uaobkDjsC53bA7uYwexiyqxiPgMIuGWsE9FJrz2k
 YptW+5Mw9q1jb9AAAAEnJvb3RASmVua2lucy1zbGF2ZQ==
 -----END OPENSSH PRIVATE KEY-----
 ````
+
+go to the manage jenkins --> nodes -->
+````
+Name: Jenkins-Slave1
+
+Description: this is for testing the jenkins node
+
+Number of executors: 1
+
+Remote root directory: /opt/Jenkins-Slave
+
+Labels: Jenkins-Slave1
+
+Usage: Only build jobs with label expressions matching this node
+
+Launch method: Launch agents via SSH
+
+Host: 13.235.78.149
+
+Credentials:
+
+root (this is for jenkins slave 1)
+passwd : paste the id_rsa 
+
+Host Key Verification Strategy:
+
+Non verifying Verification Strategy
+
+Availability:
+Keep this agent online as much as possible
+
+Node Properties
+Disable deferred wipeout on this node?
+Environment variables
+Tool Locations
+
+Save
+````
+
 ````
 Cat id_rsa.pub
 ````
