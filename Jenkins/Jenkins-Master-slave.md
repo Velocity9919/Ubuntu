@@ -166,12 +166,9 @@ Credentials:
 root (this is for jenkins slave 1)
 passwd : paste the id_rsa 
 
-Host Key Verification Strategy:
+Host Key Verification Strategy: Non verifying Verification Strategy
 
-Non verifying Verification Strategy
-
-Availability:
-Keep this agent online as much as possible
+Availability: Keep this agent online as much as possible
 
 Node Properties
 Disable deferred wipeout on this node?
