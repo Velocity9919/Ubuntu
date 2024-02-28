@@ -1,6 +1,7 @@
 ````
-sudo apt-get update -y
-sudo apt-get install -y default-jdk
+sudo apt update -y
+sudo apt install openjdk-17-jre -y
+sudo apt install openjdk-17-jdk -y
 java --version
 ````
 ````
@@ -22,7 +23,7 @@ rm apache-maven-3.9.4-bin.tar.gz
 sudo vi /etc/profile.d/mavenenv.sh
 ````
 ````
-export JAVA_HOME=/usr/lib/jvm/default-java
+export JAVA_HOME=
 
 export M2_HOME=/opt/maven
 
