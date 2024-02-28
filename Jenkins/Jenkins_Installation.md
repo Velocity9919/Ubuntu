@@ -47,11 +47,15 @@ find /usr/lib/jvm/java-17* | head -n 3
 vi ~/.bash_profile
 
 JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+
 PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+
 export JAVA_HOME
+
 export PATH
 
 source ~/.bash_profile
+
 echo $PATH
 
 sudo update-alternatives --config java
