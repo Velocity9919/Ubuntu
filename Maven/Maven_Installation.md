@@ -23,9 +23,6 @@ rm apache-maven-3.9.4-bin.tar.gz
 sudo vi /etc/profile.d/mavenenv.sh
 ````
 ````
-find /usr/lib/jvm/java-17* | head -n 3
-````
-````
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 
 export M2_HOME=/opt/maven
@@ -38,4 +35,8 @@ source /etc/profile.d/mavenenv.sh
 ````
 ````
 mvn --version
+````
+
+````
+find /usr/lib/jvm/java-17* | head -n 3
 ````
