@@ -6,8 +6,9 @@ sudo hostnamectl set-hostname Jenkins
 /bin/bash
 ````
 ````
-sudo apt-get update -y
-sudo apt-get install -y default-jdk
+sudo apt update -y
+sudo apt install openjdk-17-jre -y
+sudo apt install openjdk-17-jdk -y
 java --version
 ````
 ````
@@ -38,14 +39,14 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 
 ````
-find /usr/lib/jvm/java-11* | head -n 3
+find /usr/lib/jvm/java-17* | head -n 3
 ````
 ````
-/usr/lib/jvm/java-11-openjdk-amd64
+/usr/lib/jvm/java-17-openjdk-amd64
 ````
 vi ~/.bash_profile
 
-JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
 export JAVA_HOME
 export PATH
